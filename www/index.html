@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f6f1">
+    <meta name="description" content="Thoughtful pieces for wherever the day takes you. Discover the latest edit from Maison Sunday.">
+    <title>Maison Sunday — The art of getting dressed</title>
+    <link rel="stylesheet" href="/index.css">
+    <script src="/site-config.js"></script>
+    <script src="/index.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      A little something extra: complimentary shipping on orders over $100
+    </div>
+
+    <header class="site-header">
+      <button class="menu-toggle icon-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#story">Our story</a>
+        <a href="#journal">The Sunday edit</a>
+      </nav>
+      <a class="wordmark" href="#" aria-label="Maison Sunday home">maison <span>sunday</span></a>
+      <div class="header-actions">
+        <a class="search-link" href="#shop">Search</a>
+        <button class="bag-button" type="button" aria-label="Shopping bag, 0 items">
+          Bag <span class="bag-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">The new-season state of mind</p>
+          <h1 id="hero-title">A softer<br>kind of <em>statement.</em></h1>
+          <p class="hero-description">Considered pieces, made for slow mornings, long lunches, and every lovely little thing in between.</p>
+          <a class="button button-dark" href="#shop">Discover the new edit <span aria-hidden="true">↗</span></a>
+          <p class="hero-note">Dressed for the days you want to remember.</p>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image hero-image-main">
+            <img src="/assets/images/Floral%20Embroidered%20Corset%20Dress%20Flat%20Lay.png" data-cloudinary-id="maison-sunday/floral-embroidered-corset-dress" alt="Ivory embroidered dress with delicate floral details">
+          </div>
+          <div class="hero-image hero-image-detail">
+            <img src="/assets/images/Pastel%20Swirl%20Resortwear%20Flat%20Lay.png" data-cloudinary-id="maison-sunday/pastel-swirl-resortwear" alt="Pink patterned resortwear set with warm-weather accessories">
+          </div>
+          <span class="hero-sticker">A little<br>more you</span>
+          <span class="hero-caption">The feeling of finding your thing.</span>
+        </div>
+        <a class="scroll-cue" href="#shop" aria-label="Scroll to the new edit"><span></span> Scroll to explore</a>
+      </section>
+
+      <section class="shop-section section-wrap" id="shop" aria-labelledby="shop-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Good things, just in</p>
+            <h2 id="shop-title">The Sunday edit</h2>
+          </div>
+          <p class="section-aside">Pieces to wear on repeat.<br>And then a little more.</p>
+        </div>
+        <div class="shop-toolbar">
+          <div class="filter-list" role="group" aria-label="Filter products">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Everything <span>05</span></button>
+            <button class="filter-button" type="button" data-filter="clothing" aria-pressed="false">Clothing</button>
+            <button class="filter-button" type="button" data-filter="shoes" aria-pressed="false">Shoes</button>
+          </div>
+          <label class="search-box">
+            <span class="visually-hidden">Search the collection</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+            <input id="product-search" type="search" placeholder="Find your favorite..." autocomplete="off">
+          </label>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>No pieces found. Try another search.</p>
+        <div class="shop-more"><a class="text-link" href="#shop">A little more to love <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="story-section" id="story" aria-labelledby="story-title">
+        <div class="story-image">
+          <img src="/assets/images/Cream%20Striped%20Vest%20Outfit%20Flat%20Lay.png" data-cloudinary-id="maison-sunday/cream-striped-vest-outfit" alt="Cream and black knit outfit styled with sunny accessories" loading="lazy">
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">A note from us</p>
+          <h2 id="story-title">Less, but<br><em>lovelier.</em></h2>
+          <p>We believe getting dressed should feel like coming home to yourself. So we look for the pieces that make you pause, smile, and reach for them again tomorrow.</p>
+          <a class="text-link" href="#journal">A little about us <span aria-hidden="true">↗</span></a>
+          <span class="story-flower" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="newsletter-section" id="journal" aria-labelledby="newsletter-title">
+        <p class="eyebrow">Your Sunday, in your inbox</p>
+        <h2 id="newsletter-title">A good thing <em>every now and then.</em></h2>
+        <p>New finds, little rituals, and the occasional note just because.</p>
+        <form class="newsletter-form">
+          <label class="visually-hidden" for="email-address">Email address</label>
+          <input id="email-address" name="email" type="email" placeholder="Your email address" required>
+          <button type="submit" aria-label="Subscribe to the newsletter">Count me in <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="newsletter-status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#">maison <span>sunday</span></a>
+      <p>For the days that feel like yours.</p>
+      <span>© 2025 Maison Sunday</span>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
